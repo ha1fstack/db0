@@ -32,8 +32,6 @@ export class DB0Session<
   TFullSchema extends Record<string, unknown>,
   TSchema extends TablesRelationalConfig,
 > extends SQLiteSession<"async", unknown, TFullSchema, TSchema> {
-  dialect: SQLiteAsyncDialect;
-
   private logger: Logger;
 
   constructor(
